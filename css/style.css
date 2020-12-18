@@ -27,6 +27,15 @@ body {
     position: relative;
 }
 
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+    
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -120,7 +129,7 @@ body {
 
 .name__header {
     position: relative;
-    padding: 0 0 0 28px;
+    padding: 0 0 0 16px;
 }
 
 .name__header::before{
