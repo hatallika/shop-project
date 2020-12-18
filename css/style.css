@@ -90,7 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 17px;
+    font-size: 14px;
     color: #fff;
     position: absolute;
     width: 19px;
@@ -141,20 +141,76 @@ body {
     left: -12px;
 }
 
+.stock {
+    margin-top: 63px;
+}
+
 .stock__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 470px;
+    align-content: space-between;
 }
 
 .stock__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 360px;
     height: 260px;
-    background-image: url(../img/stock-women.jpg);
+    /* text-align: center; */
+    /* padding-top: 105px; */
+    /* box-sizing: border-box; */
+}
+
+.stock__item::after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(33, 22, 22, 0.7);
+    top: 0;
+    right: 0;
+
+}
+
+.stock__item-name {
+    color:#fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
     text-align: center;
+    z-index: 1;
+}
+
+.stok_item-category {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    color: var(--pink-color);
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.stock__item-women {
+    background-image: url(../img/stock-women.jpg);  
+}
+
+.stock__item-men {
+    background-image: url(../img/men.jpg);  
+}
+
+.stock__item-kids {
+    background-image: url(../img/kids.jpg);  
 }
 
 .stock__item--last {
     width: 100%;
+    height: 180px;
+    background-image: url(../img/accesories.jpg);
 }
 
