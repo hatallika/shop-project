@@ -333,6 +333,10 @@ body {
     margin-bottom: 30px;
 }
 
+.fetured-item--png {
+
+}
+
 .fetured-item__link {
     text-decoration: none;
 }
@@ -340,6 +344,16 @@ body {
 
 .fetured-item__image     {
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    height: 420px;
+
+}
+
+.fetured-item__image--png{
+    background: #F7E4E2;
+    
 }
 
 .fetured-item__image::before {
@@ -379,11 +393,9 @@ body {
     padding-left: 5px;
 }
 
-.fetured-item__image:hover::after{
+.fetured-item__image:hover::after {
     opacity: 1;  
 }
-
-
 
 .fetured-item__inner {
     padding: 25px 28px 20px 16px;
@@ -648,9 +660,118 @@ opacity: 0.8;
 } 
 
 .feed__link {
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-box {
+    height: 148px;
+    background: #F8F3F4;
+}
+
+.nav-box__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav-box__title {
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+}
+.breadcrumbs__link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #636363;
+    text-decoration: none;
+} 
+
+.breadcrumbs__link:hover {
+opacity: 0.85;
+}
+
+.breadcrumbs__link:active {
+    opacity: 0.5;    
+}
+
+.breadcrumbs__item:not(:last-of-type):after {
+    content: "/";
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+
+.breadcrumbs__link--last {
+    color:#F16D7F;
+    font-weight: 700;
+}
+
+.filter {
+    display: flex;
+    margin-top: 51px;
+}
+
+.filter__list {
+    margin: auto 30% ;
+
+}
+
+.filter__item {
+    display: inline;
+}
+
+.filter__header * {
+    display: inline;
+}
+
+.filter__title {
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+text-transform: uppercase;
+}
+
+.filter__link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.filter__link::after{
+content: ""; 
+display: inline-block;
+width: 11px;
+height: 11px;
+margin-right: 27px;
+margin-left: 10px;
+background: url(../img/catalog/down-arrow.svg) no-repeat 0 bottom;
+}
+
+.filter__link:hover {
+    opacity: 0.8;
+}
+
+.filter__link:active {
+    opacity: 0.5;
 }
