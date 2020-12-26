@@ -1,0 +1,124 @@
+.header {
+    position: relative;
+    background-color: $black-color;
+
+    .header__container {
+       @include flex-center-space-between();
+        min-height: 75px;
+        
+    }
+
+    .header__button {
+        background-color: transparent;
+        border: none;
+
+        &:hover, 
+        &:focus {
+            opacity: .8;
+        }
+
+        &:active {
+            opacity: .5;
+        }
+    }
+
+    .header__logo {
+        margin: 0 41px 0 0;
+    }
+    
+    .header__search {
+        margin: 18px 0 0;
+    }
+    
+    .header__button-cart {
+        position: relative;
+    }
+    
+    .header__button-cart::after {
+        content:"5";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background-color: $pink-color;
+        border-radius: 50%;
+        top: 0px;
+        right:0px;
+    }
+    
+    .header__menu-list,
+    .header__logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__menu-item:not(:last-of-type) {
+        margin: 0 34px 0 0;
+    }
+    
+    .header__navigation {
+        background-color: #fff;
+        height: 764px;
+        width: 232px;
+        padding: 34px 37px;
+        border-radius: 0px;
+        position: absolute;
+        right:0;
+        z-index: 1;
+        box-sizing: border-box;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+    
+    .header__navigation-title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+    
+    .header__navigation-list{
+        padding-top: 24px;
+    }
+    
+    .header__navigation-item {
+        padding-top: 20px;
+    }
+    
+    .header__navigation-sub-title {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $pink-color
+    }
+    
+    .header__navigation-sub-list {
+        padding-left: 21px;
+    }
+    
+    .header__navigation-href {
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        text-decoration: none;
+
+        &:hover {
+            color: #222;
+        }
+        &:active{
+            color: $pink-color;
+        }
+        
+    }
+    
+    .header__item{
+        @include font(24px, 29px)
+    }
+
+}
+
+

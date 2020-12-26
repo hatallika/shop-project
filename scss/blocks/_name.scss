@@ -1,0 +1,41 @@
+.name {
+    display: flex;
+}
+
+.name__header-span {
+    font-style: normal;
+    font-weight: 700;
+    color: $pink-color;
+    @include font(32px, 38px)
+}
+
+.name__header-span-size {
+    font-size: 32px;
+}
+
+.name__header {
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    @include font(48px, 58px)
+}
+
+.name__content {
+    width: 100%;
+    padding: 335px 0 0 64px;
+    background-color: $pink-background;
+}
+
+.name__header {
+    position: relative;
+    padding: 0 0 0 16px;
+}
+
+.name__header::before{
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 100%;
+    background-color: $pink-color;
+    left: -12px;
+}

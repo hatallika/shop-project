@@ -1,0 +1,53 @@
+.filter {
+    display: flex;
+    margin-top: 51px;
+
+    .filter__list {
+        margin: auto 30% ;
+    
+    }
+    
+    .filter__item {
+        display: inline;
+    }
+    
+    .filter__header * {
+        display: inline;
+    }
+    
+    .filter__title {
+    font-weight: 600;
+    @include font (14px, 27px);
+    color: #000000;
+    text-transform: uppercase;
+    }
+    
+    .filter__link {
+        @include font (14px, 17px);
+        color: #6F6E6E;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &::after{
+            content: ""; 
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            margin-right: 27px;
+            margin-left: 10px;
+            background: url(../img/catalog/down-arrow.svg) no-repeat 0 bottom;
+            }
+            
+        &:hover {
+            opacity: 0.8;
+        }
+        
+        &:active {
+            opacity: 0.5;
+        }
+        
+    }
+    
+    
+}
+
