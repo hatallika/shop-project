@@ -73,7 +73,23 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0)
-}    
+} 
+
+.selected-pink {
+    color: $pink-color;
+}
+
+.wrap-padding{
+    padding-top:96px;
+    padding-bottom: 128px;
+}
+
+.wrap-flex-space-betwen{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
 
 
 
