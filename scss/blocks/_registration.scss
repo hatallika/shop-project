@@ -1,0 +1,139 @@
+.registration {
+    padding-top:64px;
+    padding-bottom: 96px;
+    display: flex;
+    
+}
+
+
+.registration_name {
+    @include font (16px,19px);
+    font-weight: 300;
+    
+}
+.registration__form {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        display: block;
+        width: 360px;
+        height: 45px;
+        border: 1px solid $grey-border;
+        margin-top: 21px;
+        @include font(13px, 16px);
+        font-weight: 300;
+        color: #B1B1B1;
+        padding-left: 16px;
+
+        &:hover,
+        &:active {
+            outline: none;
+            border: 1px solid rgb(121, 121, 121); 
+        }
+        &:focus {
+            outline: none;  
+            border: 1px solid $pink-color;
+
+        }
+
+        
+    }
+} 
+
+.registration__gender {
+    margin: 30px 0;
+}
+.registration__radio{
+    visibility: hidden;
+    &:checked+.registration__radio-text::before{
+        background-color: $pink-color;
+    }
+
+}
+.registration__radio-text{
+    @include font(11px, 13px);
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border: 1px solid $grey-border;
+        border-radius: 50%;
+        top: -3px;
+        left: -26px;
+    }
+
+
+}
+
+.registration__password-text {
+    @include font(13px, 16px);
+    font-weight: 300;
+    color: #B1B1B1;
+    display: inline-block;
+    width: 360px;
+    margin-top: 15px;
+    margin-bottom: 39px;
+}
+
+.registration__button {
+    @include flex-center;
+    width: 167px;
+    height: 50px;
+    background: $pink-color;
+    color: #fff;
+    @include font (14px, 17px);
+    text-transform: uppercase;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+    &:active{
+        opacity: 0.5;
+    }
+    
+    &::after{
+        content:"";
+        display:block;
+        width: 17px;
+        height: 10px;
+        background-image: url("../img/arrow-image.svg");
+        margin-left: 20px;
+    }
+
+}
+
+.registration__text {
+    padding-left: 128px;
+    @include font (24px, 29px);
+    color: #000;
+    font-weight: 300;
+    
+    
+}
+
+.registration__title {
+    text-transform: uppercase;
+    margin-top: 21px;
+}
+
+.registration__description {
+    margin-top: 22px;
+}
+
+.registration__list {
+    list-style-image: url(../img/registration-item.svg);
+    margin-top: 21px;
+}
+.registration__item {
+    padding-bottom: 16px;
+    
+}

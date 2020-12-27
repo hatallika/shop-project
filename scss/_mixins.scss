@@ -10,8 +10,8 @@
     
 }
 
-@mixin flex-space-between-space-between {
+@mixin flex-center {
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
