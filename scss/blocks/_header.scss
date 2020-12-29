@@ -4,8 +4,7 @@
 
     .header__container {
        @include flex-center-space-between();
-        min-height: 75px;
-        
+        min-height: 75px;        
     }
 
     .header__button {
@@ -41,7 +40,7 @@
         align-items: center;
         text-align: center;
         font-size: 14px;
-        color: #fff;
+        color: $white-color;
         position: absolute;
         width: 19px;
         height: 19px;
@@ -62,7 +61,7 @@
     }
     
     .header__navigation {
-        background-color: #fff;
+        background-color: $white-color;
         height: 764px;
         width: 232px;
         padding: 34px 37px;
@@ -103,22 +102,20 @@
     .header__navigation-href {
         font-size: 14px;
         line-height: 17px;
-        color: #6F6E6E;
+        color: $grey-link;
         text-decoration: none;
 
         &:hover {
-            color: #222;
+            color: $dark-black;
         }
         &:active{
             color: $pink-color;
-        }
-        
+        }        
     }
     
     .header__item{
         @include font(24px, 29px)
     }
-
 }
 
 

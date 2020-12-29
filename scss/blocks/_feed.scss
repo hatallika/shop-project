@@ -1,32 +1,30 @@
+/* лента с копирайтом*/
 .feed {
     height: 79px;
-    background: #222224;
+    background: $dark-black;
 }
 
 .feed__wrap {
     @include flex-center-space-between;
     height: 100%;
-
 }
 
 .feed__copyright {
     @include font(16px,19px);
-    color: #FBFBFB;
+    color: $pink-advantages;
 }
 
 .feed__social-list{
     display: flex;
-
 }
 
 .feed__social-item {
     width: 30px;
     height: 30px;
-    background: #FFFFFF;
-    margin-right: 7px;
-    
-
+    background: $white-color;
+    margin-right: 7px;    
 }
+
 .feed__social-item:last-child {
     margin-right: 0px;
 }

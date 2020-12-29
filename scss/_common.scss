@@ -35,7 +35,7 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 table {
@@ -44,7 +44,7 @@ table {
 }
 
 body {
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;

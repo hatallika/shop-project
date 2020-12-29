@@ -1,18 +1,15 @@
 .registration {
     padding-top:64px;
     padding-bottom: 96px;
-    display: flex;
-    
+    display: flex;    
 }
-
 
 .registration_name {
     @include font (16px,19px);
-    font-weight: 300;
-    
+    font-weight: 300;    
 }
-.registration__form {
 
+.registration__form {
     input[type="text"],
     input[type="email"],
     input[type="password"] {
@@ -23,7 +20,7 @@
         margin-top: 21px;
         @include font(13px, 16px);
         font-weight: 300;
-        color: #B1B1B1;
+        color: $grey-border;
         padding-left: 16px;
 
         &:hover,
@@ -34,10 +31,7 @@
         &:focus {
             outline: none;  
             border: 1px solid $pink-color;
-
-        }
-
-        
+        }       
     }
 } 
 
@@ -67,14 +61,12 @@
         top: -3px;
         left: -26px;
     }
-
-
 }
 
 .registration__password-text {
     @include font(13px, 16px);
     font-weight: 300;
-    color: #B1B1B1;
+    color: $grey-border;
     display: inline-block;
     width: 360px;
     margin-top: 15px;
@@ -86,7 +78,7 @@
     width: 167px;
     height: 50px;
     background: $pink-color;
-    color: #fff;
+    color: $white-color;
     @include font (14px, 17px);
     text-transform: uppercase;
     border: none;
@@ -108,16 +100,13 @@
         background-image: url("../img/arrow-image.svg");
         margin-left: 20px;
     }
-
 }
 
 .registration__text {
     padding-left: 128px;
     @include font (24px, 29px);
-    color: #000;
-    font-weight: 300;
-    
-    
+    color: $black-black;
+    font-weight: 300;    
 }
 
 .registration__title {
@@ -134,6 +123,5 @@
     margin-top: 21px;
 }
 .registration__item {
-    padding-bottom: 16px;
-    
+    padding-bottom: 16px;    
 }

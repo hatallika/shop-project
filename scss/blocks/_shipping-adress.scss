@@ -10,8 +10,7 @@
         @include form;
     
         &:focus {
-        color: #B1B1B1;
-       
+        color: $grey-border;       
         }
     }
 }
@@ -19,9 +18,9 @@
 .shipping__button {
     @include font (11px, 13px);
     font-weight: 300;
-    color: #4A4A4A;
-    border: 1px solid #A4A4A4;
-    background: #fff; 
+    color: $grey-border;
+    border: 1px solid $grey-border;
+    background: $white-color; 
     text-transform: uppercase;
     width: 100px;
     height: 34px;
@@ -36,7 +35,6 @@
     &:active {
         border: 1px solid $pink-color;
     }
-
 }
 
 .shipping__total {
@@ -44,15 +42,14 @@
     flex-direction: column;
     width: 360px;
     height: 214px;
-    background: #F5F3F3;
+    background: $pink-shipping;
     padding: 39px 34px 42px 43px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 .shipping__sub-total {
     @include font (11px, 13px);
-    color: #4A4A4A;
+    color: $grey-border;
     text-align: right;
     text-transform: uppercase;
 }
@@ -60,7 +57,7 @@
 .shipping__grang-total {
     @include font (16px, 19px);
     font-weight: 300;
-    color: #222222;
+    color: $dark-black;
     text-align: right;
     text-transform: uppercase;
     margin-top: 10px;
@@ -76,7 +73,7 @@
     height: 50px;
     background-color: $pink-color;
     @include font (16px, 19px);
-    color: #fff;
+    color: $white-color;
     border: none;
     text-transform: uppercase;
     margin-top: 39px;
@@ -97,9 +94,8 @@
         content: "";
         width: 275px;
         height: 1px;
-        background: #E2E2E2;
+        background: $light-grey;
         top: -17px;
-        left: -1px;
-     
+        left: -1px;     
     }
 }

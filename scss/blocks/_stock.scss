@@ -12,8 +12,7 @@
     &__item {
         position: relative;
         width: 360px;
-        height: 260px;
-        
+        height: 260px;        
     }
     
     &__link::after{
@@ -24,12 +23,11 @@
         width: 100%;
         background: rgba(33, 22, 22, 0.7);
         top: 0;
-        right: 0;
-    
+        right: 0;    
     }
     
     &__item-name {
-        color:#fff;
+        color: $white-color;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
@@ -79,15 +77,12 @@
         }
         
         &:hover {
-            opacity: 0.8;
-        
+            opacity: 0.8;        
         }
         
         &:active {
             opacity: 0.5;
         }
-    }
-    
-    
+    }    
 }
 

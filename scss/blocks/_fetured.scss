@@ -5,23 +5,22 @@
         text-align: center;
     }
     .fetured__title {
-        @include font (30px, 36px);
-             
+        @include font (30px, 36px);             
     }
     
     .fetured__text {
         @include font(14px, 17px);
-        color: #9F9F9F;
-    
+        color: $dark-grey;    
     }
+
     .fetured__items {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         /*align-content: space-between;*/
-        margin: 48px 0;
-            
+        margin: 48px 0;            
     }
+
     .fetured-item {
         width: 360px;
         min-height: 581px;
@@ -32,7 +31,7 @@
             text-decoration: none;
         }    
         
-        .fetured-item__image     {
+        .fetured-item__image {
             position: relative;
             display: flex;
             justify-content: center;
@@ -49,11 +48,11 @@
                 background: rgba(58, 56, 56, 0.86);
                 opacity: 0;
             }
-            &:hover::before{
+            &:hover::before {
                 opacity: 1;  
             } 
             
-            &:active::before{
+            &:active::before {
                 opacity: 0.75;  
             } 
             
@@ -66,23 +65,28 @@
                 left: 0;
                 border: 1px solid #FFFFFF;
                 opacity: 0;
-                background: url(../img/vectorcart.png) no-repeat 5px 7px;
+                background: url(../img/vectorcart.png) no-repeat 15px 7px;
                 font-size: 14px;
-                line-height: 40px;
+                line-height: 42px;
                 color: #fff;
                 text-align: center;
                 top: 185px;
                 left: 120px;
-                padding-left: 5px;
+                padding-left: 33px;
+                box-sizing: border-box; 
+                
+                &:hover {
+                    border: 1px solid $pink-color;  
+                }
             }
             
             &:hover::after {
                 opacity: 1;  
-            }
+            }            
+           
 
             &--png{
-                background: #F7E4E2;
-                
+                background: $bg-image-articule;                
             }
         }
         
@@ -94,13 +98,13 @@
             font-size: 13px;
             line-height: 16px;
             color: $black-color;
-            }
+        }
              
         .fetured-item__text {
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
-            color: #5D5D5D;
+            color: $grey-text;
             margin-top: 12px;
         }
         
@@ -108,11 +112,9 @@
             font-size: 16px;
             line-height: 19px;
             color: $pink-color;
-            margin-top: 18px;
-            
-        }        
-
-    }    
+            margin-top: 18px;            
+        } 
+    } 
     
     .fetured__more {
         text-align:center;
@@ -125,22 +127,20 @@
         border: none;
         text-decoration: none;
         font-size: 16px;
-        border: 1px solid #FF6A6A;
+        border: 1px solid $pink-button;
         color: $pink-color;
         margin: 0 auto;
         line-height: 50px;
 
         &:hover {
             background-color: $pink-color;
-            color: #fff;
+            color: $white-color;
         }
             
         &:active {
             opacity: 0.45;
         }
-    }
-    
-    
+    }       
 }
 
 

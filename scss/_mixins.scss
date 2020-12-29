@@ -6,8 +6,7 @@
 
 @mixin font($font-size, $line-height) {
     font-size: $font-size;  
-    line-height: $line-height;
-    
+    line-height: $line-height;    
 }
 
 @mixin flex-center {
@@ -35,6 +34,5 @@
     &:focus {
         outline: none;  
         border: 1px solid $pink-color;
-
     }
 }
