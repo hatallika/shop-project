@@ -38,8 +38,7 @@
             width: 360px;
             height: 420px;
             
-            &::before {
-                content: "";
+            &--before {
                 position: absolute;
                 width: 360px;
                 height: 420px;
@@ -48,7 +47,9 @@
                 background: rgba(58, 56, 56, 0.86);
                 opacity: 0;
             }
-            &:hover::before {
+            &:hover {opacity: 1;};
+            
+            &--before:hover {
                 opacity: 1;  
             } 
             
@@ -56,15 +57,12 @@
                 opacity: 0.75;  
             } 
             
-            &::after {
-                content: "Add to Cart";
-                position: absolute;
+            &--before-button {
+                display: block;
                 width: 138px;
                 height: 43px;
-                top: 0;
-                left: 0;
+                margin: 188px auto;
                 border: 1px solid #FFFFFF;
-                opacity: 0;
                 background: url(../img/vectorcart.png) no-repeat 15px 7px;
                 font-size: 14px;
                 line-height: 42px;
@@ -78,13 +76,12 @@
                 &:hover {
                     border: 1px solid $pink-color;  
                 }
+
+                &:active {
+                    opacity: 0.5;
+                }
             }
             
-            &:hover::after {
-                opacity: 1;  
-            }            
-           
-
             &--png{
                 background: $bg-image-articule;                
             }
