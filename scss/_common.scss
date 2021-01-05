@@ -90,6 +90,10 @@ body {
     width: inherit;
 }
 
-
+@media (max-width: $desktop-width) {
+    .container {
+        width: 96%;        
+    }
+}
 
 

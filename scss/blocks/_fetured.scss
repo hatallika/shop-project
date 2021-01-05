@@ -1,6 +1,5 @@
 .fetured {
-    margin-top: 96px;
-
+    
     .fetured__header {
         text-align: center;
     }
@@ -18,7 +17,18 @@
         justify-content: space-between;
         flex-wrap: wrap;
         /*align-content: space-between;*/
-        margin: 48px 0;            
+        margin: 48px 0 18px;
+        @include tablet {
+            margin: 72px 0 3px;
+        }
+
+        @include mobile {
+            margin: 65px 0 11px;
+        }
+        
+        @include breakpoint (749px) {
+            justify-content: center;
+        }
     }
 
     .fetured-item {
@@ -36,12 +46,12 @@
             display: flex;
             justify-content: center;
             width: 360px;
-            height: 420px;
+            min-height: 420px;
             
             &--before {
                 position: absolute;
                 width: 360px;
-                height: 420px;
+                min-height: 420px;
                 top: 0;
                 left: 0 ;
                 background: rgba(58, 56, 56, 0.86);
@@ -59,8 +69,8 @@
             
             &--before-button {
                 display: block;
-                width: 138px;
-                height: 43px;
+                max-width: 138px;
+                min-height: 43px;
                 margin: 188px auto;
                 border: 1px solid #FFFFFF;
                 background: url(../img/vectorcart.png) no-repeat 15px 7px;
@@ -139,5 +149,6 @@
         }
     }       
 }
+
 
 

@@ -36,3 +36,21 @@
         border: 1px solid $pink-color;
     }
 }
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1599px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media /*(min-width: 375px) and */(max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin breakpoint ($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}

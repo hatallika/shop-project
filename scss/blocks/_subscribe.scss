@@ -1,8 +1,9 @@
 .subscribe {
-    height: 448px;
+    min-height: 448px;
     background: url(../img/bg_grey.jpg) no-repeat;
     position: relative;
-    
+    background-size: cover;
+
     &::before {
         content: "";
         position: absolute;
@@ -16,24 +17,38 @@
     
     display: flex;
     flex-direction: row;  
-    padding-top: 87px;
-    padding-bottom: 126px;
+    padding: 87px 0 126px;
     justify-content: space-between;
-    position: relative; 
+    position: relative;
+    
+    @include tablet {
+        flex-direction: column;
+        padding: 54px 0 140px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        padding: 54px 16px 140px;
+    }
 }
 
 .subscribe__quote {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    
 }
 
 
 .subscribe__quote-text {
-    font-size: 20px;
-    line-height: 24px;
+    @include font (20px, 24px);    
     text-align: center;
-    width: 360px;  
+    width: 360px; 
+    
+    @include mobile {
+        @include font (19px, 23px);
+    }
 }
 
 .subscribe__quote-image {
@@ -47,14 +62,32 @@
 }
 
 .subscribe__form-title {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 40px;
+    font-weight: 700;
+    @include font (24px, 38px);    
+    text-transform: uppercase;
+    @include tablet {        
+        @include font (24px, 29px);  
+    }
+    @include mobile {        
+        @include font (24px, 37px);  
+    }
 }    
-.subscribe__form-text{
-    font-size:18px;
-    line-height: 30px;
-    margin-bottom: 32px;
+
+.subscribe__form-text { 
+    font-weight: 400;   
+    @include font (18px, 30px);  
+    margin: 0 0 32px 0;
+    text-transform: uppercase;
+
+    @include tablet {
+        margin: 0 0 27px 0;        
+        @include font (18px, 27px);
+    }
+
+    @include mobile {    
+        margin: 0 0 22px 0;    
+        @include font (14px, 21px);  
+    }
 }  
 .subscribe__form-input {
     background: #E1E1E1;
@@ -69,6 +102,10 @@
     box-sizing: border-box;
     color: #222224;
     opacity: 0.67;
+
+    @include mobile {
+        width: 245px;   
+    }
 }
 
 
@@ -82,7 +119,11 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: $white-color;    
+    color: $white-color;   
+    
+    @include mobile {
+        width: 95px;   
+    }
 }
 
 .subscribe__form-button:focus, .subscribe__form-input:focus{
