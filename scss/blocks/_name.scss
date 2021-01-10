@@ -46,21 +46,22 @@
     @include mobile {
         @include font(38px, 46px);
     }
-
 }
 
 .name__content {
     width: 100%;
-    padding: 335px 0 0 64px;
+    padding: 0 0 0 64px;
+    display: flex;
+    align-items: center;
     background-color: $pink-background;
+    
     @include tablet {
-        padding: 138px 0 0 40px;
+        padding: 0 0 0 40px;        
     }
+    
     @include mobile {
-        padding: 0 0 0 56px;
-        display: flex;
-        align-items: center;
-        
+        padding: 0;        
+        justify-content: center;       
     }
 }
 

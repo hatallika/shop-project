@@ -13,8 +13,7 @@
     }
 }
 
-.subscribe__row {
-    
+.subscribe__row {    
     display: flex;
     flex-direction: row;  
     padding: 87px 0 126px;
@@ -28,18 +27,15 @@
 
     @include mobile {
         flex-direction: column;
-        padding: 54px 16px 140px;
+        padding: 54px 0 140px;
     }
 }
 
 .subscribe__quote {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    
+    align-items: center;    
 }
-
 
 .subscribe__quote-text {
     @include font (20px, 24px);    

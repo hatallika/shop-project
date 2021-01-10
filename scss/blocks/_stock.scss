@@ -1,12 +1,12 @@
 .stock {
-    padding: 63px 0 96px;
+    padding: 63px 0 0;
     
     @include tablet {
-        padding: 19px 0 155px;
+        padding: 19px 0 0;
     }  
 
     @include mobile {
-        padding: 48px 0 64px;
+        padding: 48px 0 0;
     }  
 }
 
@@ -101,6 +101,7 @@
     line-height: 19px;
     text-align: center;
     z-index: 1;
+    text-transform: uppercase;
 }
 
 .stock__item-category {
