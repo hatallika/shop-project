@@ -4,13 +4,7 @@
 
     .header__container {
        @include flex-center-space-between();
-        min-height: 75px; 
-        @include tablet {
-            width: 91.7%;
-        }
-        @include mobile {
-            width: 96%;
-        }
+        min-height: 75px;        
     }
 
     .header__button {
@@ -61,24 +55,9 @@
         display: flex;
         align-items: center;
     }
-        
+    
     .header__menu-item:not(:last-of-type) {
         margin: 0 34px 0 0;
-        @include mobile {
-            margin: 0;
-        }
-    }
-
-    .header__menu-item--icon2 {
-        @include mobile {
-            display: none;
-        }
-    }
-
-    .header__menu-item--icon3 {
-        @include mobile {
-            display: none;
-        }
     }
     
     .header__navigation {
@@ -139,8 +118,4 @@
     }
 }
 
-/*@media (max-width: 1599px) {
-    .header__container {
-      width: 91.7%; } 
-}*/
 

@@ -6,10 +6,6 @@
 .nav-box__flex {
     @include flex-center-space-between();
     height: 100%;
-    @include mobile {
-        justify-content: center;
-        flex-direction: column;
-    }
 }
 
 .nav-box__title {
@@ -22,7 +18,6 @@
 .nav-box__breadcrumbs {
     display: flex;
     flex-direction: row;
-    margin: 32px 0 0 0;
 }
 
 .nav-box__breadcrumbs-link {

@@ -36,27 +36,3 @@
         border: 1px solid $pink-color;
     }
 }
-
-/*берем интервалы по популярным устройствам 600 - 900 для tablet portret - tablet landscope,
-где ширина 768 из шаблона входит в данный интервал,
-1200 для desctop */
-@mixin tablet {
-    @media (min-width: 600px) and (max-width: 1199px) {
-        @content;
-    }
-}
-
-/*берем интервалы по популярным устройствам 0-599 для mobile, */
-@mixin mobile {
-    @media /*(min-width: 375px) and */(max-width: 599px) {
-        @content;
-    }
-}
-
-/*произвольная точка разрыва, если отталкиваемся от дизайна */
-@mixin breakpoint_down ($max-width) {
-    @media (max-width: $max-width) {
-        @content;
-    }
-}
-

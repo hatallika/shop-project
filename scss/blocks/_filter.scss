@@ -4,13 +4,7 @@
     position: relative;
 
     .filter__list {
-        margin: auto 30%;
-        @include tablet {
-            margin: 0 0 0 auto;
-        }          
-        @include mobile {
-            margin: 0 0 0 auto;
-        } 
+        margin: auto 30% ;    
     }
     
     .filter__item {
@@ -22,13 +16,10 @@
     }  
 
     .filter__title {
-        font-weight: 600;
-        @include font (14px, 27px);
-        color: $black-black;
-        text-transform: uppercase;
-        @include mobile {
-            display: none;
-        }   
+    font-weight: 600;
+    @include font (14px, 27px);
+    color: $black-black;
+    text-transform: uppercase;
     }
     
     .filter__link {
@@ -36,10 +27,6 @@
         color: $grey-link;
         text-transform: uppercase;
         text-decoration: none;
-
-        @include mobile {
-            @include font (12px, 14px); 
-        }
 
         &::after{
             content: ""; 
@@ -72,14 +59,6 @@
     background: $white-color;
     z-index: 5;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-
-    @include tablet {
-        display: none;
-    }
-
-    @include mobile {
-        display: none;
-    }
 }
 
 .filter__nav-header {
@@ -155,15 +134,5 @@
         color: $pink-color;
     }
 }
-
-.filter__icon-img {
-    width: 10px;
-    height: 15px;
-    @include mobile {
-        width: 37px;
-        height: 25px;
-    }
-}
-
 
 
