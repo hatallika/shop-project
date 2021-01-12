@@ -1,8 +1,16 @@
 .fetured {
-    margin-top: 96px;
-
+    
     .fetured__header {
         text-align: center;
+        margin: 96px 0 48px;
+
+        @include tablet {
+            margin: 154px 0 74px;
+        }
+
+        @include mobile {
+            margin: 64px 0 65px;
+        }
     }
     .fetured__title {
         @include font (30px, 36px);             
@@ -18,14 +26,37 @@
         justify-content: space-between;
         flex-wrap: wrap;
         /*align-content: space-between;*/
-        margin: 48px 0;            
+        margin: 48px 0 18px;
+
+        @include tablet {
+            margin: 72px 0 3px;
+            justify-content: space-between;
+        }
+       
+        @include mobile {
+            margin: 0 0 41px;
+            justify-content: center;
+        }
+        
+        @include breakpoint_down (752px) {
+            flex-direction: column;
+            align-content: center;            
+        }
     }
 
     .fetured-item {
         width: 360px;
         min-height: 581px;
         background: #F8F8F8;
-        margin-bottom: 30px;
+        margin: 0 0 30px 0;
+
+        @include mobile {
+            margin: 0 0 16px 0; 
+            &:last-child {
+                margin: 0;
+            }
+        }        
+
 
         .fetured-item__link {
             text-decoration: none;
@@ -36,12 +67,12 @@
             display: flex;
             justify-content: center;
             width: 360px;
-            height: 420px;
+            min-height: 420px;
             
             &--before {
                 position: absolute;
                 width: 360px;
-                height: 420px;
+                min-height: 420px;
                 top: 0;
                 left: 0 ;
                 background: rgba(58, 56, 56, 0.86);
@@ -59,8 +90,8 @@
             
             &--before-button {
                 display: block;
-                width: 138px;
-                height: 43px;
+                max-width: 138px;
+                min-height: 43px;
                 margin: 188px auto;
                 border: 1px solid #FFFFFF;
                 background: url(../img/vectorcart.png) no-repeat 15px 7px;
@@ -95,6 +126,7 @@
             font-size: 13px;
             line-height: 16px;
             color: $black-color;
+            text-transform: uppercase;
         }
              
         .fetured-item__text {
@@ -139,5 +171,6 @@
         }
     }       
 }
+
 
 
