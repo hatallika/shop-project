@@ -69,13 +69,13 @@
         }
     }
 
-    .header__menu-item--icon2 {
+    .header__menu-item--icon-profile {
         @include mobile {
             display: none;
         }
     }
 
-    .header__menu-item--icon3 {
+    .header__menu-item--icon-bascket {
         @include mobile {
             display: none;
         }
@@ -92,6 +92,13 @@
         z-index: 1;
         box-sizing: border-box;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+        @include tablet {
+            display: none;
+        }
+        @include mobile {
+            display: none;
+        }
     }
     
     .header__navigation-title {
@@ -139,8 +146,4 @@
     }
 }
 
-/*@media (max-width: 1599px) {
-    .header__container {
-      width: 91.7%; } 
-}*/
 

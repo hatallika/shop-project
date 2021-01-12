@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*берем интервалы по популярным устройствам 600 - 900 для tablet portret - tablet landscope,
-где ширина 768 из шаблона входит в данный интервал,
-1200 для desctop */
-/*берем интервалы по популярным устройствам 0-599 для mobile, */
-/*произвольная точка разрыва, если отталкиваемся от дизайна */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,10 +44,10 @@ table {
 
 body {
   font-family: "Lato", "Arial", sans-serif;
-  /*font-size: 30px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px;*/ }
+  line-height: 36px; }
 
 .container {
   width: 1140px;
@@ -97,12 +92,6 @@ body {
           justify-content: space-between;
   width: inherit; }
 
-/*
-@media (max-width: $desktop-width) {
-    .container {
-        width: 96%;        
-    }
-} */
 .header {
   position: relative;
   background-color: #222222; }
@@ -171,10 +160,10 @@ body {
       .header .header__menu-item:not(:last-of-type) {
         margin: 0; } }
   @media (max-width: 599px) {
-    .header .header__menu-item--icon2 {
+    .header .header__menu-item--icon-profile {
       display: none; } }
   @media (max-width: 599px) {
-    .header .header__menu-item--icon3 {
+    .header .header__menu-item--icon-bascket {
       display: none; } }
   .header .header__navigation {
     background-color: #fff;
@@ -189,6 +178,12 @@ body {
             box-sizing: border-box;
     -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); }
+    @media (min-width: 600px) and (max-width: 1199px) {
+      .header .header__navigation {
+        display: none; } }
+    @media (max-width: 599px) {
+      .header .header__navigation {
+        display: none; } }
   .header .header__navigation-title {
     font-weight: bold;
     font-size: 14px;
@@ -218,10 +213,6 @@ body {
     font-size: 24px;
     line-height: 29px; }
 
-/*@media (max-width: 1599px) {
-    .header__container {
-      width: 91.7%; } 
-}*/
 .name {
   display: -webkit-box;
   display: -ms-flexbox;
