@@ -1,19 +1,38 @@
 .advantages{
-    height: 341px;
+    min-height: 341px;
     background: $dark-black;
     margin-top: 95px;
-    padding-top: 104px;
+    padding: 104px 0;
     box-sizing: border-box;
+
+    @include tablet {
+        margin-top: 65px;
+        padding: 48px 0 64px;
+    }
 
     .advantages__list {
         display: flex;
-        flex-direction: row;    
+        flex-direction: row; 
+        @include tablet {
+            flex-direction: column;   
+        }
+        
+        @include mobile {
+            flex-direction: column;   
+        } 
     }
     
     .advantages__item{
         text-align: center;
         &:not(:last-child) {
-            margin-right: 30px;
+            margin: 0 30px 0 0;
+            @include tablet {
+                margin: 0 0 48px 0;
+            }
+
+            @include mobile {
+                margin: 0 0 48px 0;
+            }
         }
     }
     
@@ -46,7 +65,15 @@
         font-weight: 300;
         text-align: center;
         color: $pink-advantages;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
+        max-width: 360px;
+
+        @include tablet {
+            margin: 0 auto;
+        }
+        @include mobile {
+            margin: 0 auto;
+        }
     }
 }    
 
