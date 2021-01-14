@@ -4,15 +4,27 @@
     text-transform: uppercase;
 }
 
+.shipping__form-wrap {
+    @include tablet {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: nowrap;    
+    }
+}
+
 .shipping__form {
     margin-bottom: 57px;
     input[type="text"] {
-        @include form;
+        @include form;          
     
         &:focus {
         color: $grey-border;       
         }
     }
+    @include tablet {
+        width: 100%
+    }
+
 }
 
 .shipping__button {
@@ -44,7 +56,7 @@
     height: 214px;
     background: $pink-shipping;
     padding: 39px 34px 42px 43px;
-    box-sizing: border-box;    
+    box-sizing: border-box;       
 }
 
 .shipping__sub-total {
@@ -76,7 +88,7 @@
     color: $white-color;
     border: none;
     text-transform: uppercase;
-    margin-top: 39px;
+    margin-top: 39px;    
     
     &:focus {
         outline: none;        

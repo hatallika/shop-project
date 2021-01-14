@@ -1,6 +1,8 @@
 .nav-box {
     height: 148px;
     background: $pink-nav;
+    display: flex;
+    align-items: center;
 }
 
 .nav-box__flex {
@@ -23,6 +25,10 @@
     display: flex;
     flex-direction: row;
     margin: 32px 0 0 0;
+
+    @include tablet {
+        margin: 0; 
+    }
 }
 
 .nav-box__breadcrumbs-link {
@@ -45,10 +51,15 @@
     }
 } 
 
+.nav-box__breadcrumbs-item {
+    @include mobile {
+        line-height: 0;
+    }
+}
+
 .nav-box__breadcrumbs-item:not(:last-of-type):after {
     content: "/";
     font-size: 14px;
-    line-height: 17px;
     color: $grey-nav;
     text-transform: uppercase;
     margin-left: 5px;
