@@ -16,14 +16,16 @@
     .header__button {
         background-color: transparent;
         border: none;
+        fill: $svg-button; 
 
         &:hover, 
         &:focus {
-            opacity: .8;
+            fill: $pink-button;
+            outline: none;
         }
 
         &:active {
-            opacity: .5;
+            opacity: .8;            
         }
     }
 
@@ -145,5 +147,6 @@
         @include font(24px, 29px)
     }
 }
+
 
 

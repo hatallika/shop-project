@@ -87,16 +87,20 @@ body {
     color: $pink-color;
 }
 
-.wrap-padding{
-    padding-top:96px;
-    padding-bottom: 128px;
-}
-
-.wrap-flex-space-betwen{
+.wrap-cart-shipping {
+    padding: 96px 0 128px;
     display: flex;
     justify-content: space-between;
-    width: inherit;
-}
+    
+    @include tablet {
+        padding: 59px 0 128px;
+        flex-direction: column;
+        align-items: center;
+    }
 
-
-
+    @include mobile {
+        padding: 39px 0 96px;
+        flex-direction: column;
+        align-items: center;
+    }
+} 
