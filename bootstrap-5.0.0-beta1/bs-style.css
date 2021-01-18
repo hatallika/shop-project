@@ -156,6 +156,18 @@ body {
   .tablet-none {
     display: inherit; } }
 
+@media (max-width: 599px) {
+  .p-b-adaptive {
+    margin-bottom: 3px; } }
+
+@media (max-width: 599px) {
+  .m-hidden {
+    display: none; } }
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .t-hidden {
+    display: none; } }
+
 /* лента с копирайтом*/
 .feed {
   height: 79px;

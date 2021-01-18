@@ -16,9 +16,7 @@
 }
 
 @mixin form {
-    display: block;
-    width: 360px;
-    height: 45px;
+    display: block;    
     border: 1px solid $grey-border;
     margin-top: 21px;
     @include font(13px, 16px);
