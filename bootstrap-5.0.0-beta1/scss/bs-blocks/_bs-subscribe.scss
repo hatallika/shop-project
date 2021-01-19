@@ -44,8 +44,6 @@
     
     @include mobile {
         @include font (19px, 23px);
-        width: 89%;
-        padding: 0 16px;
     }
 }
 
@@ -101,8 +99,8 @@
     color: #222224;
     opacity: 0.67;
 
-    @include breakpoint_down (359px) {
-        width: 65.333%;   
+    @include mobile {
+        width: 245px;   
     }
 }
 
@@ -121,10 +119,6 @@
     
     @include mobile {
         width: 95px;   
-    }
-
-    @include breakpoint_down (359px) {
-        width: 26.61%;   
     }
 }
 

@@ -1,3 +1,8 @@
+.shipping {
+    @include tablet {
+    width: 100%;
+    }  
+}
 .shipping__title {
     @include font (16px, 19px);
     font-weight: 300;
@@ -8,23 +13,33 @@
     @include tablet {
         display: flex;
         flex-direction: row; 
-        flex-wrap: nowrap;    
+        flex-wrap: nowrap;
+        justify-content: space-between;    
     }
 }
 
 .shipping__form {
     margin-bottom: 57px;
+    
+    @include tablet {
+        margin-bottom: 0;
+        width: 48.78%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
     input[type="text"] {
-        @include form;          
+        @include form;
+        width: 100%;
+        height: 45px;
+        box-sizing: border-box;          
     
         &:focus {
         color: $grey-border;       
         }
     }
-    @include tablet {
-        width: 100%
-    }
-
+    
 }
 
 .shipping__button {
@@ -56,7 +71,14 @@
     height: 214px;
     background: $pink-shipping;
     padding: 39px 34px 42px 43px;
-    box-sizing: border-box;       
+    box-sizing: border-box;
+    @include tablet {
+        margin: 20px 0 0 15px;
+        
+    }
+    @include breakpoint_down (359px) {
+        width: 100%;
+    }
 }
 
 .shipping__sub-total {
@@ -67,12 +89,23 @@
 }
 
 .shipping__grang-total {
+    position: relative;
     @include font (16px, 19px);
     font-weight: 300;
     color: $dark-black;
     text-align: right;
     text-transform: uppercase;
     margin-top: 10px;
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 97.178%;
+        height: 1px;
+        background: $light-grey;
+        top: 40px;
+        left: 0;     
+    }
 }
 .shipping__cost {
     padding-left: 40px;
@@ -88,7 +121,10 @@
     color: $white-color;
     border: none;
     text-transform: uppercase;
-    margin-top: 39px;    
+    margin-top: 39px;
+    @include tablet {
+        width: 273px / 283px * 100%;
+    }    
     
     &:focus {
         outline: none;        
@@ -98,16 +134,5 @@
     }
     &:active {
         opacity: 0.5;
-    }
-
-    &::before {
-        display: block;
-        position: absolute;
-        content: "";
-        width: 275px;
-        height: 1px;
-        background: $light-grey;
-        top: -17px;
-        left: -1px;     
-    }
+    }    
 }

@@ -1,4 +1,3 @@
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,19 +50,6 @@ body {
     line-height: 36px;
 }
 
-.container {
-    width: 1140px;
-    margin: 0 auto;
-
-    @include tablet {
-        width: 95.8%;        
-    }
-
-    @include mobile {
-        width: 95.7%;        
-    }
-}
-
 .container-bs {
     width: 1140px;
     margin: 0 auto;
@@ -100,20 +86,117 @@ body {
     color: $pink-color;
 }
 
-.wrap-cart-shipping {
-    padding: 96px 0 128px;
-    display: flex;
-    justify-content: space-between;
-    
+.header {
+    min-height: 75px;
+}
+
+.bg-light-grey {
+    background: rgba(42, 42, 42, 0.15);
+}
+
+.container-grey {
+    height: 777px;
+    background-color: $grey-container;
     @include tablet {
-        padding: 59px 0 128px;
-        flex-direction: column;
-        align-items: center;
+        height: 624px;
+    }
+    @include mobile {
+        height: 624px;
+    }
+}
+
+.parent-hg {
+    height: 777px;
+    @include tablet {
+        height: 624px;
+    }
+    @include mobile {
+        height: 624px;
+    }
+}
+
+.button-white {
+    fill: white;
+}
+
+.container-nav {
+    background-color: $pink-nav;
+    min-height: 148px;
+}
+
+.pink-color {
+    color: $pink-color;
+}
+.grey-nav {
+    color: $grey-nav;
+}
+
+.pinc-after {
+    &::after {
+        content: "";
+        display: block;
+        background-color: $pink-color;
+        height: 3px;
+        width: 63px;
+        margin: 0 auto;
+        
+    }
+}
+
+.negativ-block {
+    padding: 65px;
+    position: relative;
+    margin-top: -60px;
+    z-index: 1;
+    background-color: $white-color;
+    @include tablet {
+        margin-top: 0;
+    }
+}
+
+.grey-line {
+    width: 83.46%;
+    height: 0px;
+    border: 1px solid #EAEAEA;
+    @include mobile {
+        width: 46.67%;
+    }
+}
+
+.br-0 {
+    border-radius: 0;
+}
+
+.section-p {
+    padding: 129px 0;
+
+}
+
+.tablet-none {
+    @include breakpoint_down (992px) {
+        display: none;
     }
 
-    @include mobile {
-        padding: 39px 0 96px;
-        flex-direction: column;
-        align-items: center;
+    @include breakpoint_down (576px) {
+        display: inherit;
     }
-} 
+}
+
+.p-b-adaptive {
+    @include mobile {
+        margin-bottom: 3px;
+    }   
+}
+
+.m-hidden {
+    @include mobile {
+        display: none;
+    }
+}
+.t-hidden {
+    @include tablet {
+        display: none;
+    }
+}
+
+

@@ -3,8 +3,11 @@
     background-color: $black-color;
 
     .header__container {
-       @include flex-center-space-between();
-        min-height: 75px; 
+        @include flex-center-space-between();
+        min-height: 75px;
+        max-width: 1140px;
+        margin: 0 auto;
+
         @include tablet {
             width: 91.7%;
         }
