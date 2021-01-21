@@ -54,10 +54,8 @@
         }        
     }       
 
-    .filter__header {
-        display: flex;
-        align-items: baseline;
-    }
+   
+    
 
     .filter__title {
         font-weight: 600;
@@ -83,16 +81,27 @@
     
 }
 
+.filter__header {
+    display: flex;
+    align-items: baseline;    
+}
+.filter__header:hover + .filter__nav{
+    display: block;
+}
+
 .filter__nav {
     position: absolute;
-    display: block;
-    top: 39;
-    left: 0;
+    top: 35px;
+    left: -15px;
     width: 360px;
     padding: 17px;
     background: $white-color;
     z-index: 5;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    display: none;
+    &:hover {
+        display: block;
+    }
 
     @include tablet {
         display: none;
@@ -161,14 +170,13 @@
 }
 
 .filter__nav-sub-list {
-   padding-left: 11px;
+    padding-left: 11px;
 }
 
 .filter__nav-sub-link {
     @include font (14px, 17px);
     text-decoration: none;
-    color: $grey-link;
-      
+    color: $grey-link;      
     &:hover {
         color: $dark-black;
     }
@@ -176,6 +184,8 @@
         color: $pink-color;
     }
 }
+
+
 
 
 
