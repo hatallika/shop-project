@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container">
             <div class="header__logo-container">
                 <img src="img/logo.svg" class="header__logo" alt="logo" width="44" height="38">
                 <div class="header__search">
@@ -116,44 +116,45 @@
             </div>
         </nav>
         <section class="registration container">
-            <form action="#" method="POST" class="registration__form">
-                <fieldset class="registration__fieldset">
-                    <legend class="registration_name">Your Name</legend>
-                    <input type="text" name="name" placeholder="First Name">
-                    <input type="text" name="lastname" placeholder="Last Name">
-                    
-                    <div class="registration__gender">
-                        <input type="radio" class="registration__radio" name="male" id="male">
-                        <label for="male" class="registration__radio-text">Male</label>
-                        <input type="radio" class="registration__radio" name="male" id="female">
-                        <label for="female" class="registration__radio-text">Female</label>
-                    </div>
-                </fieldset>
+            <div class="registration__wrap-persent">
+                <form action="#" method="POST" class="registration__form">
+                    <fieldset class="registration__fieldset">
+                        <legend class="registration_name">Your Name</legend>
+                        <input type="text" name="name" placeholder="First Name">
+                        <input type="text" name="lastname" placeholder="Last Name">
+                        
+                        <div class="registration__gender">
+                            <input type="radio" class="registration__radio" name="male" id="male">
+                            <label for="male" class="registration__radio-text">Male</label>
+                            <input type="radio" class="registration__radio" name="male" id="female">
+                            <label for="female" class="registration__radio-text">Female</label>
+                        </div>
+                    </fieldset>
 
-                <fieldset class="registration__fieldset">
-                    <legend class="registration_name">Login details</legend>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <p class="registration__password-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                </fieldset>
-                <button class="registration__button">join now</button>
-            </form>
+                    <fieldset class="registration__fieldset">
+                        <legend class="registration_name">Login details</legend>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <p class="registration__password-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    </fieldset>
+                    <button class="registration__button" type="submit">join now</button>
+                </form>            
+                <div class="registration__text">
+                    <h2 class="registration__title">loyalty has its perks</h2>
+                    <p class="registration__description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                    <ul class="registration__list">
+                        <li class="registration__item">15% off welcome offer
+                        </li>
+                        <li class="registration__item">Free shipping, returns and exchanges on all orders
 
-            <div class="registration__text">
-                <h2 class="registration__title">loyalty has its perks</h2>
-                <p class="registration__description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                <ul class="registration__list">
-                    <li class="registration__item">15% off welcome offer
-                    </li>
-                    <li class="registration__item">Free shipping, returns and exchanges on all orders
+                        </li>
+                        <li class="registration__item">$10 off a purchase on your birthday
 
-                    </li>
-                    <li class="registration__item">$10 off a purchase on your birthday
-
-                    </li>
-                    <li class="registration__item">Early access to products</li>
-                    <li class="registration__item">Exclusive offers & rewards</li>
-                </ul>
+                        </li>
+                        <li class="registration__item">Early access to products</li>
+                        <li class="registration__item">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
             </div>
         </section>
         
