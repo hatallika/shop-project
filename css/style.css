@@ -541,24 +541,26 @@ body {
   line-height: 17px;
   color: #9F9F9F; }
 .fetured .fetured__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 31.5789%);
+  grid-row-gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+          justify-content: space-between; }
   @media (min-width: 600px) and (max-width: 1199px) {
     .fetured .fetured__items {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; } }
+              justify-content: space-between;
+      grid-template-columns: repeat(2, 48.913%);
+      grid-row-gap: 17px; } }
   @media (max-width: 599px) {
     .fetured .fetured__items {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      grid-template-columns: repeat(1, 100%);
+      grid-row-gap: 16px; } }
   @media (max-width: 752px) {
     .fetured .fetured__items {
       -webkit-box-orient: vertical;
@@ -568,17 +570,8 @@ body {
       -ms-flex-line-pack: center;
           align-content: center; } }
 .fetured .fetured-item {
-  width: 360px;
-  min-height: 581px;
+  width: 100%;
   background: #F8F8F8; }
-  .fetured .fetured-item:nth-last-child(n+4) {
-    margin: 0 0 30px 0; }
-  @media (max-width: 752px) {
-    .fetured .fetured-item:nth-last-child(n+2) {
-      margin: 0 0 30px 0; } }
-  @media (max-width: 599px) {
-    .fetured .fetured-item:nth-last-child(n+2) {
-      margin: 0 0 16px 0; } }
   .fetured .fetured-item .fetured-item__link {
     text-decoration: none; }
   .fetured .fetured-item .fetured-item__image {
@@ -589,12 +582,11 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 360px;
-    min-height: 420px; }
+    width: 100%; }
     .fetured .fetured-item .fetured-item__image--before {
       position: absolute;
-      width: 360px;
-      min-height: 420px;
+      width: 100%;
+      height: 100%;
       top: 0;
       left: 0;
       background: rgba(58, 56, 56, 0.86);
@@ -627,6 +619,9 @@ body {
         opacity: 0.5; }
     .fetured .fetured-item .fetured-item__image--png {
       background: #F7E4E2; }
+  .fetured .fetured-item .fetured-item__pic {
+    width: 100%;
+    height: auto; }
   .fetured .fetured-item .fetured-item__inner {
     padding: 25px 28px 20px 16px; }
   .fetured .fetured-item .fetured-item__title {
