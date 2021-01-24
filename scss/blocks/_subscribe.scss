@@ -100,6 +100,12 @@
     box-sizing: border-box;
     color: #222224;
     opacity: 0.67;
+    &:hover {
+        background: $bg-image-articule;
+    }
+    &:focus {
+        background: $focus-bg;
+    }
 
     @include breakpoint_down (359px) {
         width: 65.333%;   

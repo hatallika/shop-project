@@ -34,10 +34,16 @@
 
     .header__logo {
         margin: 0 41px 0 0;
+        &:hover {
+            opacity: 0.5;
+        }
+        &:active {
+            filter: grayscale(.75);
+        }
     }
     
     .header__search {
-        margin: 18px 0 0;
+        margin: 10px 0 0;
     }
     
     .header__button-cart {

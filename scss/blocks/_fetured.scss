@@ -59,7 +59,7 @@
             justify-content: center;
             width: 100%;            
             
-            &--before {
+            &-before {
                 position: absolute;
                 width: 100%;
                 height: 100%;                
@@ -70,7 +70,7 @@
             }
             &:hover {opacity: 1;};
             
-            &--before:hover {
+            &-before:hover {
                 opacity: 1;  
             } 
             
@@ -78,7 +78,7 @@
                 opacity: 0.75;  
             } 
             
-            &--before-button {
+            &-before-button {
                 display: block;
                 max-width: 138px;
                 min-height: 43px;
