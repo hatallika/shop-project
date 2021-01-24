@@ -144,8 +144,7 @@ body {
         background-color: $pink-color;
         height: 3px;
         width: 63px;
-        margin: 0 auto;
-        
+        margin: 0 auto;        
     }
 }
 
@@ -163,7 +162,7 @@ body {
 .grey-line {
     width: 83.46%;
     height: 0px;
-    border: 1px solid #EAEAEA;
+    border: 1px solid $grey-line;
     @include mobile {
         width: 46.67%;
     }
@@ -182,7 +181,6 @@ body {
     @include breakpoint_down (992px) {
         display: none;
     }
-
     @include breakpoint_down (576px) {
         display: inherit;
     }
@@ -217,7 +215,6 @@ body {
     @include tablet {
         padding: 54px 0 140px;
     }
-
     @include mobile {
         padding: 54px 0 140px;
     }
@@ -299,11 +296,7 @@ body {
     }
     &:active {
     fill: $pink-color;
-    box-shadow: none;
     }
-    &:visited {
-        box-shadow: none;    
-    } 
 }
 
 .hover-opacity {

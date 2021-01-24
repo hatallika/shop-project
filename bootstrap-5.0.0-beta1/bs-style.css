@@ -8839,10 +8839,7 @@ body {
   .btn-fill:hover {
     fill: #F16D7F; }
   .btn-fill:active {
-    fill: #F16D7F;
-    box-shadow: none; }
-  .btn-fill:visited {
-    box-shadow: none; }
+    fill: #F16D7F; }
 
 .hover-opacity:hover {
   opacity: 0.8; }
