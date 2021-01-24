@@ -64,17 +64,8 @@ body {
     }
 }
 
-.container-bs {
-    width: 1140px;
-    margin: 0 auto;
-
-    @include tablet {
-        width: 95.8%;        
-    }
-
-    @include mobile {
-        width: 95.7%;        
-    }
+.display-none {
+    display: none;
 }
 
 .clearfix:after {
