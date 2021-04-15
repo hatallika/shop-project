@@ -27,7 +27,8 @@
     position: relative;
     width: 360px;
     min-height: 260px; 
-    background-size: cover; 
+    background-size: cover;
+    background-color: #2D2322;
     
     @include tablet {
         width: 31.5%; 
@@ -35,7 +36,7 @@
     } 
 
     @include mobile {
-        width: 343px; 
+        width: 100%; 
         min-height: 247px;            
     } 
 
@@ -138,7 +139,6 @@
     }
 
     @include mobile {
-        width: 343px;
         margin-top: 0;           
     }
 }      

@@ -16,26 +16,11 @@
     }
 }
 
-@mixin interval ($min-width, $max-width) {
-    @media (min-width: $min-width) and (max-width: $max-width) {
-        @content;
-    }
-}
 
-@mixin flex-center-space-between {
-    display: flex;   
-    align-items: center;
-    justify-content: space-between;
-}
 
-@mixin font($font-size, $line-height) {
-    font-size: $font-size;  
-    line-height: $line-height;    
-}
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
+
 

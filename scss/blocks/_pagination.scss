@@ -20,19 +20,20 @@ padding: 10px 15px;
     }
 }
 
-
-
 .pagination__link {
     text-decoration: none;
     font-size: 16px;
     font-weight: 300;
     color: $grey-link;
+    fill: $dark-black;
     
     &:hover {
         color: $pink-nav-link;
+        fill: $pink-color;
     }
     &:active{
         color: $dark-black;
+        fill: $grey-border;
     }
 
 }
